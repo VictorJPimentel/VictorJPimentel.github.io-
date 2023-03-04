@@ -1,0 +1,30 @@
+#modal_win{
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal_lose{
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal_win.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+#modal_lose.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
+#score_box.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+
+#reset.hide{
+    opacity: 0;
+    pointer-events: none;
+}

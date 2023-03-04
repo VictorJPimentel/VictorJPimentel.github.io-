@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/question-mark.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="style.css">
+    <title>Guess the Number</title>
+</head>
+<body>
+
+
+    <div class="container mx-auto p-16 flex">
+        <div class="max-w-md w-full mx-auto">
+            <div class="text-4xl text-center mb-12 font-thin">GUESS MY NUMBER</div>
+            <div class="text-2xl text-center mb-12 font-thin">Guess the number bewteen 1 and 100</div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-2xl">
+                <div class="p-16">
+
+
+                    <button id="reset">reset</button>
+                    <div id="score_box">
+                        <p>Score: <span id="score">10</span></p>
+                        <p>High Score: <span id="high_score">0</span></p>
+                    </div>
+                    <input type="number" id="guess" placeholder="Guess a number">
+                    <button id="check_btn">Check</button>
+                    <br>
+                    <span id="guess_text">Guess a Number</span>
+                    <h2>Guess History</h2>
+                    <ul id="guess_list">
+                
+                    </ul>
+                
+                    <div id="modal_win">
+                        <h2>Congratulations</h2>
+                        <p>Your guess was correct. <span id="secret_num_win"></span> is my secret number</p>
+                        <p>Your score is <span id="your_score"></span></p>
+                        <p>Best: <span id="your_high_score"></span></p>
+                        <button id="try_again_btn_win">Try Again</button>
+                    </div>
+                    <div id="modal_lose">
+                        <h2>Unfortunately You Lost the Game</h2>
+                        <p>Don't give up and Try again. You can win next time</p>
+                        <p>My number was: <span id="secret_num_lose"></span></p>
+                        <button id="try_again_btn_lose">Try Again</button>
+                    </div>
+
+
+                </div>
+                
+                <div class="flex justify-between p-8 text-sm border-t border-gray-300 bg-gray-100">
+                    <a href="#" class="font-medium text-indigo-500">Create account</a>
+
+                    <a href="#" class="text-gray-600">Forgot password?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <h1>GUESS MY NUMBER</h1>
+    <h2>Guess the number bewteen 1 and 100</h2>
+    <button id="reset">reset</button>
+    <div id="score_box">
+        <p>Score: <span id="score">10</span></p>
+        <p>High Score: <span id="high_score">0</span></p>
+    </div>
+    <input type="number" id="guess" placeholder="Guess a number">
+    <button id="check_btn">Check</button>
+    <br>
+    <span id="guess_text">Guess a Number</span>
+    <h2>Guess History</h2>
+    <ul id="guess_list">
+
+    </ul>
+
+    <div id="modal_win">
+        <h2>Congratulations</h2>
+        <p>Your guess was correct. <span id="secret_num_win"></span> is my secret number</p>
+        <p>Your score is <span id="your_score"></span></p>
+        <p>Best: <span id="your_high_score"></span></p>
+        <button id="try_again_btn_win">Try Again</button>
+    </div>
+    <div id="modal_lose">
+        <h2>Unfortunately You Lost the Game</h2>
+        <p>Don't give up and Try again. You can win next time</p>
+        <p>My number was: <span id="secret_num_lose"></span></p>
+        <button id="try_again_btn_lose">Try Again</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
